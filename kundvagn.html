@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sportif Varukorg</title>
+</head>
+<body>
+    <header class="header">
+        <div class="inner-header">
+          <div class="logo-container">
+            <a href="index.html">
+              <img src="images/logo/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <ul class="navigation">
+            <li>
+              <a href="index.html">
+                Hem
+                <img src="images/icon/home.svg" alt="Hem" />
+              </a>
+            </li>
+            <li id="kontakta-oss-btn">
+              <a href="#">
+                Kontakta oss
+                <img src="images/icon/email.svg" alt="Kontakta oss" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.se/maps/place/Sportif+Unlimited/@58.4099783,15.6192875,17z/data=!3m1!4b1!4m6!3m5!1s0x46596f24bf644423:0xe7902065f55c0a26!8m2!3d58.4099783!4d15.6218624!16s%2Fg%2F1thbv8dp?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">
+                Plats
+                <img src="images/icon/map.svg" alt="Plats" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sök
+                <img src="images/icon/search.svg" alt="Sök" />
+              </a>
+            </li>
+            <li id="kategorier-btn">
+              <a href="#">
+                Kategorier
+                <img src="images/icon/category_search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Kategorier" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Varukorg
+                <img src="images/icon/shopping-cart.svg" alt="Varukorg" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Favoriter
+                <img src="images/icon/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Favoriter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class = "cart-content">
+
+      <h2 class = "cart-title">Varukorg</h2>
+
+      <div class = "cart-wrapper"> 
+        <ul id = "cart-list">
+        </ul>
+
+      </div>
+      <p id = "total-price"></p>
+        <button onclick="cleanCart()">Töm varukorg</button>
+    </div>
+    <script>
+     
+      const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartList = document.getElementById('cart-list');
+    
+      savedCart.forEach(productName => {
+        const li = document.createElement('li');
+        li.textContent = productName;
+        cartList.appendChild(li);
+      });
+    
+      function cleanCart() {
+        localStorage.removeItem('cart');
+        cartList.innerHTML = "";
+      }
+    </script>
+     <script src="go.js"></script>
+</body>
+</html>

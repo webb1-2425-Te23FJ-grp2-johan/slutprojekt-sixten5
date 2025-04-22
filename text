@@ -1,0 +1,108 @@
+Steg
+1. Layout
+2. Header
+3.Bilder
+4. Länkar
+5. Cookies?
+6. Priser, (kunna betala?)
+7. Detaljer, ytterligare design
+8. responsiv design
+9. Sortera efter
+img src="bild.jpg" alt="Beskrivning av bilden"
+
+Layout/design
+original:https://www.sportifunlimited.se/ 
+inspo:
+https://carlings.com/sv/?srsltid=AfmBOoqLBJv09pmIpF3wx83DMNwbq_EdxhZTVzIodoV4vBW_mK0IqXui
+https://www2.hm.com/sv_se/herr.html ?
+https://www.pullandbear.com/se/ 
+https://www.zalando.se/klader/ 
+https://mondokaos.se/ 
+https://wornupsweden.se/?srsltid=AfmBOorbYICv0GCLOoi86xltBUY6HUuzurKfCphT4MD3KEDZ906_sIa8 
+https://www.nike.com/se/w/skor-y7ok 
+https://junkyard.com/sv/p/vans-knu-skool-sneakers-ljusgra-skor-sneakers-unisex/7372056_F930 
+
+Header. Vit bakgrund med text samt logga
+
+har sparat bilder på veja skor, t shirts utan modell med grå bakgrund
+SCRAP THAT
+
+ha max 8-12 bilder per Kategori
+kategirier:alla Kategorier ska ha man och kvinna
+
+(skor)
+sneakers
+
+(tröjor)
+t shirts
+tröjor
+stickat 
+fleece
+jackor
+
+(Huvudaccesoraer)
+kepsar 
+mössor
+bucket hats
+
+(byxor)
+jeans
+byxor
+shorts
+
+klänning 
+kjolar
+
+skjortor
+
+väskor
+
+Vintage
+byxor 
+tshirt 
+tröjor 
+jackor 
+kepsar 
+
+(övrigt)
+strunpor etc
+
+filter: invert(100%); 
+för att göra reverse färg
+
+fixa header med js så att allt funkar
+sök motor?
+kategorier, länk till annant html med tshirt etc
+varukorg o favoriter, ska kunna spara o se 
+fixa grid de e nåt skumt, ksk med body 
+optimera alla bilder i fler res
+ny böttre intro bild
+köp sida
+
+@media (max-width: 800x) {
+    .main-menu {
+      flex-direction: column;
+    }
+  
+    .submenu {
+      position: static;
+      width: 100%;
+    }
+  
+    .menu-item a {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .submenu-item a {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+
+  nu funkar varukorgen, vill fixa bilder samt pris med totalt precis
+  tyvärr har min js fuckat upp lite, ska fixa de
+  vill göra klart min header till 100% innan jag börjar med allt annat, 
+  tror inte jag behöver lägga till "favoriter" eller "sökväg"
+  har redan gjort varukorg och sök i hemsidan är för komplcierat
+  har redan kategorier ändå
