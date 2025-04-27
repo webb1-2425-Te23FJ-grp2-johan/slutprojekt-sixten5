@@ -77,12 +77,10 @@
           <h2>850 SEK</h2>
 
           <div>
-            Storlek:
-            <select id="size-selector">
-              <option value="40">40</option>
-              <option value="41">41</option>
-              <option value="42">42</option>
-              </select>
+            Storlek
+            <button>40</button>
+            <button>41</button>
+            <button>42</button>
           </div>
           <button
             class="add-to-cart"
@@ -174,20 +172,17 @@
 
     <script>
       function addToCart(productName, productImage, productPrice) {
-      const sizeSelector = document.getElementById("size-selector");
-      const selectedSize = sizeSelector.value;
-          let cart = JSON.parse(localStorage.getItem("cart")) || [];
-          cart.push({
-            name: productName,
-            image: productImage,
-            price: productPrice,
-            size: selectedSize
-          });
-          localStorage.setItem("cart", JSON.stringify(cart));
-      
-          alert(productName + " lades till i varukorgen!");
-        }
-      </script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push({
+          name: productName,
+          image: productImage,
+          price: productPrice
+        });
+        localStorage.setItem("cart", JSON.stringify(cart));
+    
+        alert(productName + " lades till i varukorgen!");
+      }
+    </script>
     <script src="go.js"></script>
   </body>
 </html>

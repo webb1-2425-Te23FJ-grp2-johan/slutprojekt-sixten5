@@ -83,16 +83,24 @@
       const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
       const cartList = document.getElementById('cart-list');
     
-      savedCart.forEach(productName => {
-        const li = document.createElement('li');
-        li.textContent = productName;
-        cartList.appendChild(li);
-      });
+      savedCart.forEach(product => {
+    const li = document.createElement('li');
+
+    li.innerHTML = `
+      <h3>${product.name}</h3>
+      <img src="${product.image}" alt="${product.name}" style="width:200px;">
+      <p>Pris: ${product.price} kr</p>
+      <p>Storlek: ${product.size}</p>
+
+    `;
+    cartList.appendChild(li);
+  });
     
       function cleanCart() {
         localStorage.removeItem('cart');
         cartList.innerHTML = "";
       }
+      
     </script>
      <script src="go.js"></script>
 </body>

@@ -95,6 +95,8 @@ img {
 .kategorier-show{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .intro {
@@ -282,7 +284,7 @@ body {
   display: flex;
   max-width: 900px;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 200px;
   border-radius: 10px;
   
 }
@@ -346,7 +348,7 @@ nav {
   display: flex;
   padding-left: 20px;
   padding-right:30px;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 .menu-item {
@@ -410,3 +412,4 @@ nav {
   width:50%;
   border:solid thin black;
 }
+

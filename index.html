@@ -40,12 +40,12 @@
                 <img src="images/icon/map.svg" alt="Plats" />
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">
                 Sök
                 <img src="images/icon/search.svg" alt="Sök" />
               </a>
-            </li>
+            </li> -->
             <li id="kategorier-btn">
               <a href="#">
                 Kategorier
@@ -58,12 +58,12 @@
                 <img src="images/icon/shopping-cart.svg" alt="Varukorg" />
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">
                 Favoriter
                 <img src="images/icon/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Favoriter" />
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </header>
@@ -87,7 +87,9 @@
         </div>
 
         <div class="main">
+          <a href="skor./skor2.html" alt="">
           <img src="images/skor/skor2.webp" alt="" />
+          </a>
           <p class="text-brand">VANS</p>
           <p class="text-type">Old skool</p>
           <p class="text-price">850 SEK</p>
@@ -415,6 +417,18 @@
         </ul>
       </nav>
   </div>
+
+  <script>const cookieBanner = document.querySelector(".cookie-banner");
+    const cookieBtn = document.querySelector(".cookie-btn");
+    cookieBtn.addEventListener("click", (e)=>{
+        e.preventDefault();
+        cookieBanner.classList.remove("cookie-banner-active")
+        localStorage.setItem("cookieBannerDisplayed", "true")
+    })
+    
+    if(localStorage.getItem("cookieBannerDisplayed")){
+        cookieBanner.classList.remove("cookie-banner-active");
+    }</script>
 
     <script src="go.js"></script>
   </body>

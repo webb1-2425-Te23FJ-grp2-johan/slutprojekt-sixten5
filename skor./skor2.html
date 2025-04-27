@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="..\style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skor1</title>
@@ -17,20 +17,20 @@
       <div class="inner-header">
         <div class="logo-container">
           <a href="index.html">
-            <img src="images/logo/logo.svg" alt="Logo" />
+            <img src="..\images/logo/logo.svg" alt="Logo" />
           </a>
         </div>
         <ul class="navigation">
           <li>
             <a href="index.html">
               Hem
-              <img src="images/icon/home.svg" alt="Hem" />
+              <img src="..\images/icon/home.svg" alt="Hem" />
             </a>
           </li>
           <li id="kontakta-oss-btn">
             <a href="#">
               Kontakta oss
-              <img src="images/icon/email.svg" alt="Kontakta oss" />
+              <img src="..\images/icon/email.svg" alt="Kontakta oss" />
             </a>
           </li>
           <li>
@@ -38,21 +38,21 @@
               href="https://www.google.se/maps/place/Sportif+Unlimited/@58.4099783,15.6192875,17z/data=!3m1!4b1!4m6!3m5!1s0x46596f24bf644423:0xe7902065f55c0a26!8m2!3d58.4099783!4d15.6218624!16s%2Fg%2F1thbv8dp?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D"
             >
               Plats
-              <img src="images/icon/map.svg" alt="Plats" />
+              <img src="..\images/icon/map.svg" alt="Plats" />
             </a>
           <li id="kategorier-btn">
             <a href="#">
               Kategorier
               <img
-                src="images/icon/category_search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="..\images/icon/category_search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Kategorier"
               />
             </a>
           </li>
           <li>
-            <a href="kundvagn.html">
+            <a href="..\kundvagn.html">
               Varukorg
-              <img src="images/icon/shopping-cart.svg" alt="Varukorg" />
+              <img src="..\images/icon/shopping-cart.svg" alt="Varukorg" />
             </a>
           </li>
         </ul>
@@ -62,7 +62,7 @@
     
       <div class="product-container">
         <div class="product-images">
-          <img src="images/skor/skor1.webp" class="main-image" />
+          <img src="..\images/skor/skor2.webp" class="main-image" />
           <div class="thumbnail-container">
             <img src="images/skor/thumbnail/sko-tn1.webp" class="thumbnail" />
             <img src="images/skor/thumbnail/sko1-tn2.webp" class="thumbnail" />
@@ -86,7 +86,7 @@
           </div>
           <button
             class="add-to-cart"
-            onclick="addToCart('VANS Old Skool', 'images/skor/skor1.webp', 850)"
+            onclick="addToCart('VANS Old Skool', 'images/skor/skor2.webp', 850)"
           >
             Lägg till i varukorg
           </button>
@@ -173,21 +173,21 @@
     </div>
 
     <script>
-      function addToCart(productName, productImage, productPrice) {
-      const sizeSelector = document.getElementById("size-selector");
-      const selectedSize = sizeSelector.value;
-          let cart = JSON.parse(localStorage.getItem("cart")) || [];
-          cart.push({
-            name: productName,
-            image: productImage,
-            price: productPrice,
-            size: selectedSize
-          });
-          localStorage.setItem("cart", JSON.stringify(cart));
-      
-          alert(productName + " lades till i varukorgen!");
-        }
-      </script>
+    function addToCart(productName, productImage, productPrice) {
+    const sizeSelector = document.getElementById("size-selector");
+    const selectedSize = sizeSelector.value;
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push({
+          name: productName,
+          image: productImage,
+          price: productPrice,
+          size: selectedSize
+        });
+        localStorage.setItem("cart", JSON.stringify(cart));
+    
+        alert(productName + " lades till i varukorgen!");
+      }
+    </script>
     <script src="go.js"></script>
   </body>
 </html>
