@@ -311,20 +311,47 @@ body {
 }
 
 .product-info{
-  
   padding-left: 20px;
+}
+
+.product-info-tn{
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.buy-price{
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.selector{
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .add-to-cart{
   display: block;
-  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding:10px 40px 10px 40px;
+  background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
   cursor:pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .add-to-cart:hover{
-  background-color: black;
+  background-color: rgb(77, 74, 74);
 }
 
 #t-shirt-padding{

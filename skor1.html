@@ -58,30 +58,40 @@
         </ul>
       </div>
     </header>
+    <div class="background">
+      <div class = "background-over">
 
     
       <div class="product-container">
         <div class="product-images">
-          <img src="images/skor/skor1.webp" class="main-image" />
+          <img src="images/skor/skor1.webp" class="main-image thumbnail-active" onclick="changeImage(this)" id="mainDisplay"/>
           <div class="thumbnail-container">
-            <img src="images/skor/thumbnail/sko-tn1.webp" class="thumbnail" />
-            <img src="images/skor/thumbnail/sko1-tn2.webp" class="thumbnail" />
-            <img src="images/skor/thumbnail/sko1-tn3.webp" class="thumbnail" />
+            <img src="images/skor/thumbnail/sko-tn1.webp" class="thumbnail" onclick="changeImage(this)" />
+            <img src="images/skor/thumbnail/sko1-tn2.webp" class="thumbnail" onclick="changeImage(this)" />
+            <img src="images/skor/thumbnail/sko1-tn3.webp" class="thumbnail" onclick="changeImage(this)"/>
+            
           </div>
         </div>
 
         <div class="product-info">
-          <h1>VANS</h1>
-          <h2>Old skool</h2>
-          <h2>Black black</h2>
-          <h2>850 SEK</h2>
+          <h1 class = "text-brand">VANS</h1>
+          <h2 class="text-price">Old skool</h2>
+          <h2 class = "text-price">Black black</h2>
+          <h2 class = "text-price buy-price">850 SEK</h2>
 
-          <div>
+          <div class ="selector">
             Storlek:
             <select id="size-selector">
+              <option value="42">39</option>
+              <option value="42">40</option>
+              <option value="42">41</option>
               <option value="40">40</option>
               <option value="41">41</option>
               <option value="42">42</option>
+              <option value="42">43</option>
+              <option value="42">44</option>
+              <option value="42">45</option>
+
               </select>
           </div>
           <button
@@ -91,10 +101,9 @@
             Lägg till i varukorg
           </button>
           <p class="product-info-tn">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            harum, iure quidem vero accusantium aliquam ipsam, corporis quia,
-            odit voluptate dicta non incidunt! Suscipit ipsum aliquam dicta
-            commodi impedit debitis.
+            Helsvarta Vans sneakers i deras klassiska modell Vans Authentic. Tygsko med snörning och vulkaniserad wafflegripsula.
+
+Artikelnummer: VN000EE3BKA
           </p>
         </div>
       </div>
@@ -171,23 +180,10 @@
         </ul>
       </nav>
     </div>
-
-    <script>
-      function addToCart(productName, productImage, productPrice) {
-      const sizeSelector = document.getElementById("size-selector");
-      const selectedSize = sizeSelector.value;
-          let cart = JSON.parse(localStorage.getItem("cart")) || [];
-          cart.push({
-            name: productName,
-            image: productImage,
-            price: productPrice,
-            size: selectedSize
-          });
-          localStorage.setItem("cart", JSON.stringify(cart));
-      
-          alert(productName + " lades till i varukorgen!");
-        }
-      </script>
+  </div>
+<!-- </div> -->
+<script src="cartadd.js"></script>
+      <script src="change.js"></script>
     <script src="go.js"></script>
   </body>
 </html>
