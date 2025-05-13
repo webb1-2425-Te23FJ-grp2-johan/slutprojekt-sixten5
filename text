@@ -108,3 +108,35 @@ köp sida
   har redan kategorier ändå
 
   gör en bottom
+
+   <div class="main">
+            <img src="images/jeans/jeans1.webp" alt="" />
+            <p class="text-brand">Dickies</p>
+            <p class="text-type">Madison denim pants</p>
+            <p class="text-price">900 SEK</p>
+          </div>
+          <div class="main">
+            <img src="images/jeans/jeans2.webp" alt="" />
+            <p class="text-brand">Dickies</p>
+            <p class="text-type">Madison denim pants</p>
+            <p class="text-price">900 SEK</p>
+          </div>
+          <div class="main">
+            <img src="images/jeans/jeans3.webp" alt="" />
+            <p class="text-brand">Dickies</p>
+            <p class="text-type">Herndon denim pants</p>
+            <p class="text-price">850 SEK</p>
+          </div>
+          <div class="main">
+            <img src="images/jeans/jeans4.webp" alt="" />
+            <p class="text-brand">Dickies</p>
+            <p class="text-type">Loose denim carpenter pant</p>
+            <p class="text-price">950 SEK</p>
+          </div>
+        </div>
+
+        1500px och uppåt funkar min header bra
+        annars funkar den inte alls
+        nu funkar den tills från över runt 600px
+        574
+        .intro funkar inte mellan 1200 0ch 1480px
