@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
-      rel="stylesheet"
+<html lang="sv">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" 
+    rel="stylesheet" 
+    media="print" 
+    onload="this.media='all'" 
+  />
+  <noscript>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" 
+      rel="stylesheet" 
     />
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sportif Unlimited</title>
-  </head>
+  </noscript>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sportif Unlimited</title>
+  <meta name="description" content="Sportif Unlimited erbjuder ett unikt urval av vintage- och streetstyle-kläder: t-shirts, kepsar, skor och tröjor. Stilsäkert och minimalistiskt." />
+</head>
   <body>
     <div class = "background">
       <header class="header">
         <div class="inner-header">
           <div class="logo-container">
-            <a href="index.html">
-              <img src="images/logo/logo.svg" alt="Logo" />
+            <a href="opt.html">
+              <img src="images/logo/logo.svg" alt="Logo"/>
             </a>
           </div>
           <ul class="navigation">
             <li>
               <a href="index.html">
                 Hem
-                <img src="images/icon/home.svg" alt="Hem" />
-              </a>
-            </li>
-            <li id="kontakta-oss-btn">
-              <a href="#">
-                Kontakta oss
-                <img src="images/icon/email.svg" alt="Kontakta oss" />
+                <img src="images/icon/home.svg" alt="Hem"/>
               </a>
             </li>
             <li>
               <a href="https://www.google.se/maps/place/Sportif+Unlimited/@58.4099783,15.6192875,17z/data=!3m1!4b1!4m6!3m5!1s0x46596f24bf644423:0xe7902065f55c0a26!8m2!3d58.4099783!4d15.6218624!16s%2Fg%2F1thbv8dp?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">
                 Plats
-                <img src="images/icon/map.svg" alt="Plats" />
+                <img src="images/icon/map.svg" alt="Plats"/>
               </a>
             </li>
             <li id="kategorier-btn">
@@ -49,7 +55,7 @@
             <li>
               <a href="kundvagn.html">
                 Varukorg
-                <img src="images/icon/shopping-cart.svg" alt="Varukorg" />
+                <img src="images/icon/shopping-cart.svg" alt="Varukorg"/>
               </a>
             </li>
           </ul>
@@ -58,270 +64,307 @@
   
 
       <div class="intro">
-        <img
-          src="images/intro/intro1.webp"
+        <picture> 
+          <source media="(max-width: 499px)" srcset="images/intro/intro2-519x293.webp" loading="lazy" width="519" height="293"/>
+  <img
+          src="images/intro/intro1 (1).webp" width="1920" height="1080"
           alt="Introduktionsbild för Sportif"
         />
+        </picture>
+      
       </div>
       <div class="background-over">
       <div class="wrapper">
-        <div class="main">
+        <article class="main">
           <a href="skor1.html">
-            <picture>
-              <source media="(max-width:900px) and (min-width:500px)" srcset="images/skor/opta/skor1-292-395.webp" />
-              <img src="images/skor/skor1.webp" alt="Picture of Vans Old skool shoes of black color" loading="lazy"/>
-            </picture>
+          
+            
+              <img src="images/skor/skor1.webp" alt="Vans-Old-skool-skor-svart" loading="lazy" width="370" height="500"/>
+         
             <p class="text-brand">VANS</p>
           </a>
           <p class="text-type">Old skool</p>
           <p class="text-price">850 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <a href="skor./skor2.html">
-            <picture>
-               <source media="(max-width:900px) and (min-width:500px)" srcset="images/skor/opta/skor2-292-395.webp" />
-              <img src="images/skor/skor2.webp" alt="Picture of Vans Old skool shoes of white color" loading="lazy" />
-            </picture>
+        <article class="main">
+          <a href="#">
+         
+              <img src="images/skor/skor2.webp" alt="Vans-Old-skool-skor-vit" loading="lazy" width="370" height="500"/>
+           
           </a>
           <p class="text-brand">VANS</p>
           <p class="text-type">Old skool</p>
           <p class="text-price">850 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <picture>
-              <source media="(max-width:900px) and (min-width:500px)" srcset="images/skor/opta/skor3test.webp" />
-            <img src="images/skor/skor3.webp" alt="" />
-          </picture>
+        <article class="main">
+        
+            <img src="images/skor/skor3.webp" alt="Vans-sport-low-pig-suede-skor-grön" loading="lazy" width="370" height="500"/>
+         
           
           <p class="text-brand">VANS</p>
           <p class="text-type">Sport low pig suede</p>
           <p class="text-price">1 050 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-           <picture>
-              <source media="(max-width:900px) and (min-width:500px)" srcset="images/skor/opta/skor4-292-395.webp" />
-              <source media="(max-width:500px) and (min-width:300px)" srcset="images/skor/opta/skor4-292-395.webp" />
-              <source media="(max-width:300px)" srcset="images/skor/opta/skor4-292-395.webp" />
-            <img src="images/skor/skor4.webp" alt="" />
-          </picture>
+        <article class="main">
+      
+            <img src="images/skor/skor4.webp" alt="Vans-sport-low-pig-suede-skor-grön" loading="lazy" width="370" height="500"/>
+         
           <p class="text-brand">VANS</p>
           <p class="text-type">Sport low pig suede</p>
           <p class="text-price">1 050 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/skor/skor5.webp" alt="" />
+        <article class="main">
+          <img src="images/skor/skor5.webp" alt="Vans-sport-low-pig-suede-skor-grå" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Knu skool</p>
           <p class="text-price">1 050 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/skor/skor6.webp" alt="" />
+        <article class="main">
+          <img src="images/skor/skor6.webp" alt="Vans-Knu-skool-mörkgrå" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Old skool</p>
           <p class="text-price">1 050 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/skor/skor7.webp" alt="" />
+        <article class="main">
+          <img src="images/skor/skor7.webp" alt="Vans-Old-skool-röd" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Knu skool</p>
           <p class="text-price">1 650 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/skor/skor8.webp" alt="" />
+        <article class="main">
+          <img src="images/skor/skor8.webp" alt="Vans-Knu-skool-svart" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Authentic</p>
           <p class="text-price">750 SEK</p>
-        </div>
+        </article>
 
-         <div class="main">
-          <img src="images/tshirt/tshirt1.webp" alt="" />
+         <article class="main">
+          <img src="images/tshirt/tshirt1.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Magical flowers tree</p>
           <p class="text-price">400 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt2.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt2.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">ASAP tee</p>
           <p class="text-price">400 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt3.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt3.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Phoney date tee</p>
           <p class="text-price">400 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt4.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt4.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Cat crowd tee</p>
           <p class="text-price">400 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt5.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt5.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Thrasher</p>
           <p class="text-type">Flame tee</p>
           <p class="text-price">500 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt6.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt6.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Thrasher</p>
           <p class="text-type">Flame tee</p>
           <p class="text-price">500 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt7.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt7.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Thrasher</p>
           <p class="text-type">Skate mag tee</p>
           <p class="text-price">500 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/tshirt/tshirt8.webp" alt="" />
+        <article class="main">
+          <img src="images/tshirt/tshirt8.webp" alt="tshirt" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Thrasher</p>
           <p class="text-type">Skate mag tee</p>
           <p class="text-price">500 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/jeans/jeans1.webp" alt="" />
+        <article class="main">
+          <img src="images/jeans/jeans1.webp" alt="jeans" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Madison denim pants</p>
           <p class="text-price">900 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/jeans/jeans2.webp" alt="" />
+        </article>
+
+        <article class="main">
+          <img src="images/jeans/jeans2.webp" alt="jeans" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Madison denim pants</p>
           <p class="text-price">900 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/jeans/jeans3.webp" alt="" />
+        </article>
+
+        <article class="main">
+          <img src="images/jeans/jeans3.webp" alt="jeans" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Herndon denim pants</p>
           <p class="text-price">850 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/jeans/jeans4.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/jeans/jeans4.webp" alt="jeans" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Loose denim carpenter pant</p>
           <p class="text-price">950 SEK</p>
-        </div>
+        </article>
 
-        <div class="main">
-          <img src="images/shorts/shorts1.webp" alt="" />
+        <article class="main">
+          <img src="images/shorts/shorts1.webp" alt="shorts" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Vejile shorts linen</p>
           <p class="text-price">1000 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/shorts/shorts2.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/shorts/shorts2.webp" alt="shorts" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Essingen shorts waffle</p>
           <p class="text-price">600 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/shorts/shorts3.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/shorts/shorts3.webp" alt="shorts" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Essingen shorts waffle</p>
           <p class="text-price">600 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/shorts/shorts4.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/shorts/shorts4.webp" alt="shorts" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dedicated</p>
           <p class="text-type">Essingen shorts wave tiles</p>
           <p class="text-price">600 SEK</p>
-        </div>
+        </article>
 
-         <div class="main">
-          <img src="images/tröja/tröja1.webp" alt="" />
+         <article class="main">
+          <img src="images/tröja/tröja1.webp" alt="tröja" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Oaktport zip hoodie</p>
           <p class="text-price">850 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/tröja/tröja2.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/tröja/tröja2.webp" alt="tröja" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Brush script loose fit crew</p>
           <p class="text-price">850 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/tröja/tröja3.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/tröja/tröja3.webp" alt="tröja" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Skull la shaka ziphood</p>
           <p class="text-price">1000 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/tröja/tröja4.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/tröja/tröja4.webp" alt="tröja" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Summerdale sweatshirt</p>
           <p class="text-price">700 SEK</p>
-        </div>
+        </article>
 
-         <div class="main">
-          <img src="images/mössa/mössa1.webp" alt="" />
+         <article class="main">
+          <img src="images/mössa/mössa1.webp" alt="mössa" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Revolution</p>
           <p class="text-type">Big fold up beanie</p>
           <p class="text-price">300 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/mössa/mössa2.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/mössa/mössa2.webp" alt="mössa" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Revolution</p>
           <p class="text-type">Big fold up beanie</p>
           <p class="text-price">300 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/mössa/mössa3.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/mössa/mössa3.webp" alt="mössa" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Revolution</p>
           <p class="text-type">Big fold up beanie</p>
           <p class="text-price">300 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/mössa/mössa4.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/mössa/mössa4.webp" alt="mössa" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Revolution</p>
           <p class="text-type">Big fold up beanie</p>
           <p class="text-price">300 SEK</p>
-        </div>
+        </article>
 
-         <div class="main">
-          <img src="images/keps/keps1.webp" alt="" />
+         <article class="main">
+          <img src="images/keps/keps1.webp" alt="keps" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Half box curved bill jockey</p>
           <p class="text-price">350 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/keps/keps2.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/keps/keps2.webp" alt="keps" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Half box curved bill jockey</p>
           <p class="text-price">350 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/keps/keps3.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/keps/keps3.webp" alt="keps" loading="lazy" width="370" height="500"/>
           <p class="text-brand">Dickies</p>
           <p class="text-type">Hardwick cap</p>
           <p class="text-price">750 SEK</p>
-        </div>
-        <div class="main">
-          <img src="images/keps/keps4.webp" alt="" />
+        </article>
+        <article class="main">
+          <img src="images/keps/keps4.webp" alt="Vans keps" loading="lazy" width="370" height="500"/>
           <p class="text-brand">VANS</p>
           <p class="text-type">Cushman jockey</p>
           <p class="text-price">350 SEK</p>
-        </div>
+        </article>
       </div>
     </div>
+
+        <div class="bottom">
+        <div class="footer">
+        <h2>Kundservice</h2>
+        <p><a href="#">Köpvillkor</a></p>
+        <p><a href="#">Returer & byten</a></p>
+        <p><a href="#">Vanliga frågor</a></p>
+      </div>
+    
+      <div class="footer">
+        <h2>Betalning & Frakt</h2>
+        <p>Säkra betalningar via Klarna</p>
+        <p>Fri frakt över 1000 SEK</p>
+        <p>Postnord leverans</p>
+      </div>
+    
+    <div class="footer">
+  <h2>Kontakta oss</h2>
+  <div class="bottomicon">
+    <img src="images/icon/phone.svg" alt="Telefon" />
+    <p>013-124120</p>
+  </div>
+    <div class="bottomicon">
+    <img src="images/icon/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Mail" />
+    <p>shop@sportifunlimited.se</p>
+  </div>
+  <p><a href="#">Kontakta via formulär</a></p>
+</div>
+    
+      <div class="footer">
+        <h2>Om Sportif</h2>
+        <p><a href="#">Om oss</a></p>
+        <p><a href="#">Jobba hos oss</a></p>
+        <p><a href="#">Blogg</a></p>
+      </div>
+        </div>
 
     <aside class="cookie-banner cookie-banner-active">
       <p>
@@ -329,7 +372,7 @@
         Genom att fortsätta använda vår webbplats accepterar du våra cookies.
         Läs mer om cookies
         <a
-          href="https://www.kaspersky.com/resource-center/definitions/cookies"
+          href="#"
           id="cookies-more"
           >här</a
         >.
@@ -337,14 +380,6 @@
       <button class="cookie-btn">Acceptera cookies</button>
       <button class="cookie-btn">Neka cookies</button>
     </aside>
-
-    <div class="kontakta-oss">
-      <img src="images/icon/phone.svg" />
-      <p>013-124120</p>
-      <br />
-      <img src="images/icon/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
-      <p>shop@sportifunlimited.se</p>
-    </div>
 
     <div class = "kategorier">
 
@@ -425,3 +460,4 @@
     <script src="go.js"></script>
   </body>
 </html>
+

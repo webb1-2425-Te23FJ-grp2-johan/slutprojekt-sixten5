@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sportif Varukorg</title>
-</head>
-<body>
-      <header class="header">
+    <title>Sportif Unlimited</title>
+  </head>
+  <body>
+    <div class = "background">
+      <header class="header ">
         <div class="inner-header">
           <div class="logo-container">
             <a href="index.html">
@@ -25,6 +26,12 @@
               <a href="index.html">
                 Hem
                 <img src="images/icon/home.svg" alt="Hem" />
+              </a>
+            </li>
+            <li id="kontakta-oss-btn">
+              <a href="#">
+                Kontakta oss
+                <img src="images/icon/email.svg" alt="Kontakta oss" />
               </a>
             </li>
             <li>
@@ -48,27 +55,83 @@
           </ul>
         </div>
       </header>
-      <div class = "cart-content">
+      <div class="background-over">
+      <div class="wrapper2 padding-top">
+        <div class="main">
+          <a href="#" alt="">
+            <picture>
+              <source media ="(min-width: 1201px) and (max-width: 2440px)" srcset="images/opta/743x395/kitten1-743x495.webp"/>
+              <source media ="(min-width: 801px) and (max-width: 1200px)" srcset="images/opta/593x395/kitten1-593x395.webp"/>
+               <source media ="(min-width: 502px) and (max-width: 800px)" srcset="images/opta/798x532/kitten1-798x532.webp"/>
+                <source media ="(max-width: 501px)" srcset="images/opta/499x333/kitten1-499x333.webp"/>
+               <img src="images/opta/kitten11.webp" alt="" />
+            </picture>
+          
+            <p class="text-brand">Katt</p>
+          </a>
+          <p class="text-type">tre kissmissar</p>
+          <p class="text-price">999 SEK</p>
+        </div>
 
-      <h2 class = "cart-title">SHOPPINGBAG</h2>
+        <div class="main">
+          <a href="#" alt="">
+                     <picture>
+              <source media ="(min-width: 1201px) and (max-width: 2440px)" srcset="images/opta/743x395/kitten2-743x495.webp"/>
+              <source media ="(min-width: 801px) and (max-width: 1200px)" srcset="images/opta/593x395/kitten2-593x395.webp"/>
+               <source media ="(min-width: 502px) and (max-width: 800px)" srcset="images/opta/798x532/kitten2-798x532.webp"/>
+                <source media ="(max-width: 501px)" srcset="images/opta/499x333/kitten2-499x333.webp"/>
+               <img src="images/opta/kitten2.webp" alt="" />
+            </picture>
+          </a>
+          <p class="text-brand">Katt</p>
+          <p class="text-type">Gäspande kattunge</p>
+          <p class="text-price">555 SEK</p>
+        </div>
 
-      <div class = "cart-wrapper"> 
-        <ul id = "cart-list">
-        </ul>
+        <div class="main">
+                     <picture>
+              <source media ="(min-width: 1201px) and (max-width: 2440px)" srcset="images/opta/743x395/kitten3-743x495.webp"/>
+              <source media ="(min-width: 801px) and (max-width: 1200px)" srcset="images/opta/593x395/kitten3-594x395.webp"/>
+               <source media ="(min-width: 502px) and (max-width: 800px)" srcset="images/opta/798x532/kitten3-798x532.webp"/>
+                <source media ="(max-width: 501px)" srcset="images/opta/499x333/kitten3-499x333.webp"/>
+               <img src="images/opta/kitten3.webp" alt="" />
+            </picture>
+          <p class="text-brand">Katt</p>
+          <p class="text-type">Vild katt i naturen</p>
+          <p class="text-price">299 SEK</p>
+        </div>
 
+        <div class="main">
+                    <picture>
+              <source media ="(min-width: 1201px) and (max-width: 2440px)"srcset="images/opta/743x395/kitten4-743x495.webp"/>
+              <source media ="(min-width: 801px) and (max-width: 1200px)" srcset="images/opta/593x395/kitten4-594x395.webp"/>
+               <source media ="(min-width: 502px) and (max-width: 800px)" srcset="images/opta/798x532/kitten4-798x532.webp"/>
+                <source media ="(max-width: 501px)" srcset="images/opta/499x333/kitten4-499x333.webp"/>
+               <img src="images/opta/kitten4.webp" alt="" />
+            </picture>
+          <p class="text-brand">Katt</p>
+          <p class="text-type">Monster kattunge</p>
+          <p class="text-price">1 SEK</p>
+        </div>
       </div>
-      <p id = "total-price"></p>
-        <button class = "add-to-cart" onclick="cleanCart()">Töm varukorg</button>
+      </div>
+    </div>
+    <div class="kontakta-oss">
+      <img src="images/icon/phone.svg" />
+      <p>013-124120</p>
+      <br />
+      <img src="images/icon/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+      <p>shop@sportifunlimited.se</p>
     </div>
 
- <div class = "kategorier">
+    <div class = "kategorier margin-bottom">
 
       <nav>
         <ul class="main-menu">
           <li class="menu-item">
             <a href="#">Skor</a>
             <ul class="submenu">
-              <li><a href="test.html">Sneakers</a></li>
+              <li><a href="skor.html">Sneakers</a></li>
             </ul>
           </li>
           <li class="menu-item">
@@ -123,31 +186,6 @@
         </ul>
       </nav>
   </div>
-
-    <script>
-     
-      const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
-      const cartList = document.getElementById('cart-list');
-    
-      savedCart.forEach(product => {
-    const li = document.createElement('li');
-
-    li.innerHTML = `
-      <h3>${product.name}</h3>
-      <img src="${product.image}" alt="${product.name}" style="width:200px;">
-      <p>Pris: ${product.price} kr</p>
-      <p>Storlek: ${product.size}</p>
-
-    `;
-    cartList.appendChild(li);
-  });
-    
-      function cleanCart() {
-        localStorage.removeItem('cart');
-        cartList.innerHTML = "";
-      }
-      
-    </script>
-     <script src="go.js"></script>
-</body>
+    <script src="go.js"></script>
+  </body>
 </html>

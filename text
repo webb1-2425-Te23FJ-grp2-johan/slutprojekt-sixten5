@@ -111,6 +111,8 @@ köp sida
 
 
 
+
+
         1500px och uppåt funkar min header bra
         annars funkar den inte alls
         nu funkar den tills från över runt 600px
@@ -143,4 +145,18 @@ köp sida
 
   behöver inte optimera någon av bilderna jag har
   Men måste ändå visa att jag kan optimera så jag gör en ny html där jag visar att jag kan opta
+
+  732 395
+  vid 1200px kan jag ändra storlek
+  vid 800px kan jag bryta till 1x1 layout
+  vid 500 px 
+  798x532px
+  499x322px
+
+  fixa reaktiv header
+  css i min varukorg check
+
+  1500-900
+
+  KLAR?!
 
