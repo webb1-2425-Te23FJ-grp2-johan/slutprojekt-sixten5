@@ -26,6 +26,7 @@ img {
   display: block;
   background-color: white;
   position: fixed;
+  z-index:2;
 }
 
 .inner-header {
@@ -86,6 +87,7 @@ img {
   width:100%;
   background-color: white;
   display:none;
+  
 }
 
 .kategorier-show{
@@ -93,7 +95,41 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
 }
+
+@media (max-width: 700px) {
+  .kategorier{
+    padding-top: 170px;
+  }
+  .main-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+
+  .main-menu.open {
+    display: flex;
+  }
+
+  .submenu {
+    display: block;
+    position: static;
+    padding-left: 15px;
+    background: none;
+    z-index:3;
+    color: red;
+  }
+  
+
+  .menu-item:hover .submenu {
+    display: block;
+  }
+
+}
+
 
 .intro {
   padding: 0;
@@ -403,6 +439,7 @@ body {
   max-height: 500px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .main-image:hover {
@@ -423,11 +460,14 @@ body {
   border-radius: 6px;
   cursor: pointer;
   opacity: 0.7;
+ position:relative;
+ z-index:1;
   border: 2px solid transparent;
   transition: all 0.2s;
 }
 
 .thumbnail:hover,
+.thumbnail
 .thumbnail-active {
   opacity: 1;
   border: 2px solid black;
@@ -503,8 +543,15 @@ nav {
   padding: 0;
   display: flex;
   padding-left: 20px;
-  padding-right:30px;
+  padding-right:20px;
   max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .main-menu {
+    padding-left: 0;
+    padding-right:0;
+  }
 }
 
 .menu-item {
@@ -525,7 +572,7 @@ nav {
 }
 
 .menu-item a:hover {
-  background-color: #e0e0e0;
+  background-color: #f1f1f1;
 }
 
 .submenu {
@@ -537,7 +584,7 @@ nav {
   margin: 0;
   padding: 0;
   background-color:rgb(255, 255, 255);
-  width: 200px;
+  width: 100%;
 }
 
 .submenu-item a {
@@ -619,7 +666,6 @@ nav {
 }
 
 .bottom .footer {
- 
   padding: 20px;
   background-color: #fff;
   box-sizing: border-box;
@@ -661,4 +707,31 @@ nav {
   height: 24px;
   width: auto;
   filter: invert(100%); 
+}
+
+@media (max-width: 580px) {
+  .product-layout {
+    flex-direction: column;  
+    gap: 20px;  
+    align-items: center; 
+  }
+
+  .main-image {
+    max-height: 400px; 
+    width: 100%;  
+  }
+
+  .thumbnail-container {
+    width: 100%; 
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+  }
+
+  .product-info {
+    width: 100%; 
+    padding-left: 0;  
+    text-align: center; 
+  }
 }
